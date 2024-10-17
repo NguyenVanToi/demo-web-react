@@ -1,0 +1,85 @@
+@import './_colors.scss';
+
+.page.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .wrap-content {
+    background-color: #fff;
+    flex: 1;
+  }
+}
+
+.avatar {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btn.btn-back {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: .375rem 0;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.description {
+  margin-top: 5rem;
+  font-size: 1.25rem;
+  line-height: 2;
+  border: 4px solid #000066;
+  border-style: dotted;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.information {
+  color: #000066;
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  li a {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: $primary;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .avatar {
+    display: none;
+  }
+}
